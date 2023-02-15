@@ -43,8 +43,8 @@ class ListExamples {
       result.add(list2.get(index2));
       index2 += 1;
     }
-    list1.clear();
-    list2.clear();
+    list1.removeAll(list2);
+    list2.removeAll(list1);
     return result;
   }
 
